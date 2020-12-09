@@ -45,6 +45,7 @@ body.dark {
 	text-decoration: underline;
 } 
 #c1 {
+	top: 0;
 	position: fixed;
 	width: 25%;
 	height: 100%;
@@ -255,6 +256,10 @@ body.dark #bottomright a {
 		width: 70%;
 		left: 20%;
 	}
+	body:not(.mobile) .hover-title:hover + .hover-image {
+    visibility: hidden;
+    pointer-events: none;
+}
 	@media screen and (max-width: 800px) {
   .column {
     -ms-flex: 50%;
